@@ -20,3 +20,10 @@ fetch(url,{
     //データなのかを明治的に送り先が正しく理解できるようContentTypeという
     //headerをつけるべきあるということになっている。
 });
+const json = '[{"name":"Tom","age":29}]';
+let result = JSON.parse(json);
+//Javascriptのオブジェクト変換
+console.log(result);
+result = JSON.stringify(result);
+//JSONの文字列の形式に変換
+console.log(result);
